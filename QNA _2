@@ -1,94 +1,37 @@
 
- Python Interview Questions and Answers by Pythonlife
-
- 
+ Python Interview Questions and Answers
 
 1. What is Python? What are the benefits of using Python?
 Ans: Python is a programming language with objects, modules, threads, exceptions and automatic memory management. The benefits of pythons are that it is simple and easy, portable, extensible, build-in data structure and it is an open source.
 
-
-
-
-
 2. What is PEP 8?
 Ans: PEP 8 is a coding convention, a set of recommendation, about how to write your Python code more readable.
-
-
-
-
-
 
 3. What is pickling and unpickling?
 Ans: Pickle module accepts any Python object and converts it into a string representation and dumps it into a file by using dump function, this process is called pickling. While the process of retrieving original Python objects from the stored string representation is called unpickling.
 
-
-
-
-
-
-
-
 4. How Python is interpreted?
 Ans: Python language is an interpreted language. Python program runs directly from the source code. It converts the source code that is written by the programmer into an intermediate language, which is again translated into machine language that has to be executed.
-
-
-
-
-
 
 5. How memory is managed in Python?
 Ans: Python memory is managed by Python private heap space. All Python objects and data structures are located in a private heap. The programmer does not have an access to this private heap and interpreter takes care of this Python private heap.
 The allocation of Python heap space for Python objects is done by Python memory manager. The core API gives access to some tools for the programmer to code.
 Python also have an inbuilt garbage collector, which recycle all the unused memory and frees the memory and makes it available to the heap space.
 
-
-
-
-
-
-
-
 6. What are the tools that help to find bugs or perform static analysis?
 Ans: PyChecker is a static analysis tool that detects the bugs in Python source code and warns about the style and complexity of the bug. Pylint is another tool that verifies whether the module meets the coding standard.
-
- 
-
- 
 
 7. What are Python decorators?
 Ans: A Python decorator is a specific change that we make in Python syntax to alter functions easily.
 
-
-
-
-
-
-
-
 8. What is the difference between list and tuple?
 Ans: The difference between list and tuple is that list is mutable while tuple is not. Tuple can be hashed for e.g as a key for dictionaries.
-
-
-
-
-
 
 9. How are arguments passed by value or by reference?
 Ans: Everything in Python is an object and all variables hold references to the objects. The references values are according to the functions; as a result you cannot change the value of the references. However, you can change the objects if it is mutable.
 
-
-
-
-
 10. What is Dict and List comprehensions are?
 Ans: They are syntax constructions to ease the creation of a Dictionary or List based on existing iterable.
-
-
-
-
-
-
-
 
 11. What are the built-in type does python provides?
 Ans: There are mutable and Immutable types of Pythons built in types Mutable built-in types
@@ -96,149 +39,73 @@ List Sets
 Dictionaries Immutable built-in types
 Strings Tuples Numbers
 
-
-
 12. What is namespace in Python?
 Ans: In Python, every name introduced has a place where it lives and can be hooked for. This is known as namespace. It is like a box where a variable name is mapped to the object placed. Whenever the variable is searched out, this box will be searched, to get corresponding object.
-
-
-
-
 
 13. What is lambda in Python?
 Ans: It is a single expression anonymous function often used as In-line function.
 
-
-
-
-
-
-
-
 14. Why lambda forms in python does not have statements?
 Ans: A lambda form in python does not have statements as it is used to make new function object and then return them at runtime.
-
-
 
 15. What is pass in Python?
 Ans: Pass means, no-operation Python statement, or in other words it is a place holder in compound statement, where there should be a blank left and nothing has to be written there.
 
-
-
-
-
 16. In Python what are iterators?
 Ans: In Python, iterators are used to iterate a group of elements, containers like list.
-
-
 
 17. What is unit test in Python?
 Ans: A unit testing framework in Python is known as unittest. It supports sharing of setups, automation testing, shutdown code for tests, aggregation of tests into collections etc.
 
-
-
-
 18. In Python what is slicing?
 Ans: A mechanism to select a range of items from sequence types like list, tuple, strings etc. is known as slicing.
-
-
 
 19. What are generators in Python?
 Ans: The way of implementing iterators are known as generators. It is a normal function except that it yields expression in the function.
 
-
-
 20. What is docstring in Python?
 Ans: A Python documentation string is known as docstring, it is a way of documenting Python functions, modules and classes.
-
-
-
 
 21. How can you copy an object in Python?
 Ans: To copy an object in Python, you can try copy.copy () or copy.deepcopy() for the general case. You cannot copy all objects but most of them.
 
-
-
 22. What is negative index in Python?
 Ans: Python sequences can be index in positive and negative numbers. For positive index, 0 is the first index, 1 is the second index and so forth. For negative index, (-1) is the last index and (-2) is the second last index and so forth.
-
-
 
 23. How you can convert a number to a string?
 Ans: In order to convert a number into a string, use the inbuilt function str(). If you want a octal or hexadecimal representation, use the inbuilt function oct() or hex().
 
-
-
-
 24. What is the difference between Xrange and range?
 Ans: Xrange returns the xrange object while range returns the list, and uses the same memory and no matter what the range size is.
-
-
-
 
 25. What is module and package in Python?
 Ans: In Python, module is the way to structure program. Each Python program file is a module, which imports other modules like objects and attributes.
 The folder of Python program is a package of modules. A package can have modules or subfolders.
 
-
-
-
 26. Mention what are the rules for local and global variables in Python?
 Ans: Local variables: If a variable is assigned a new value anywhere within the function’s body, it’s assumed to be local.
-
 Global variables: Those variables that are only referenced inside a function are implicitly global.
-
-
-
-
 
 27. How can you share global variables across modules?
 Ans: To share global variables across modules within a single program, create a special module. Import the config module in all modules of your application. The module will be available as a global variable across modules.
-
-
-
-
-
 
 28. Explain how can you make a Python Script executable on Unix?To make a Python Script executable on Unix, you need to do two things,
 Ans: Script file’s mode must be executable and
 the first line must begin with # ( #!/usr/local/bin/python)
 
-
-
-
-
-
 29. Explain how to delete a file in Python?
 Ans: By using a command os.remove (filename) or os.unlink(filename)
-
-
-
-
 
 30. Explain how can you generate random numbers in Python?
 Ans: To generate random numbers in Python, you need to import command as import random
 random.random()
 This returns a random floating point number in the range [0,1)
 
-
-
-
-
-
 31. Explain how can you access a module written in Python from C?
 Ans: You can access a module written in Python from C by following method, Module = =PyImport_ImportModule(“”);
 
-
-
-
-
-
-32. Mention the use of // operator in Python?
+32.  Mention the use of // operator in Python?
 Ans: It is a Floor Divisionoperator , which is used for dividing two operands with the result as quotient showing only digits before the decimal point. For instance, 10//5 = 2 and 10.0//5.0 = 2.0.
-
-
-
 
 33. Mention five benefits of using Python?
 Ans: Python comprises of a huge standard library for most Internet platforms like Email, HTML, etc.
@@ -246,106 +113,48 @@ Python does not require explicit memory management as the interpreter itself all
 Provide easy readability due to use of square brackets Easy-to-learn for beginners
 Having the built-in data types saves programming time and effort from declaring variables
 
-
-
-
-
-
 34. Mention the use of the split function in Python?
 Ans: The use of the split function in Python is that it breaks a string into shorter strings using the defined separator. It gives a list of all words present in the string.
 
-
-
-
-
-
-
 35. Explain what is Flask & its benefits?
 Ans: Flask is a web micro framework for Python based on “Werkzeug, Jinja 2 and good intentions” BSD licensed. Werkzeug and jingja are two of its dependencies.
-
-
-
-
-
-
 Flask is part of the micro-framework. Which means it will have little to no dependencies on external libraries. It makes the framework light while there is little dependency to update and less security bugs.
-
-
-
-
 
 36. Mention what is the difference between Django, Pyramid, and Flask?
 Ans: Flask is a “micro framework” primarily build for a small application with simpler requirements. In flask, you have to use external libraries. Flask is ready to use.
 Pyramid are build for larger applications. It provides flexibility and lets the developer use the right tools for their project. The developer can choose the database, URL structure, templating style and more. Pyramid is heavy configurable.
-
-Like Pyramid, Django can also used for larger applications. It includes an ORM.
-
-
-
-
-
+Like Pyramid, Django can also used for larger applications. It includes an ORM
 
 37. Mention what is Flask-WTF and what are their features?
 Ans: Flask-WTF offers simple integration with WTForms. Features include for Flask WTF are
 Integration with wtforms Secure form with csrf token Global csrf protection Internationalization integration Recaptcha supporting
 File upload that works with Flask Uploads
 
-
-
-
-
-
 38. Explain what is the common way for the Flask script to work?
 Ans: The common way for the flask script to work is…
 Either it should be the import path for your application Or the path to a Python file
 
-
-
-
-
-
 39. Explain how you can access sessions in Flask?
 Ans: A session basically allows you to remember information from one request to another. In a flask, it uses a signed cookie so the user can look at the session contents and modify. The user can modify the session if only it has the secret key Flask.secret_key.
-
-
-
-
-
-
 
 40. Is Flask an MVC model and if yes give an example showing MVC pattern for your application?
 Ans: Basically, Flask is a minimalistic framework which behaves same as MVC framework. So MVC is a perfect fit for Flask, and the pattern for MVC we will consider for the following example
 
-
 from flask import Flaskapp = Flask(_name_)
 @app.route(“/”)
-
 Def hello():
-
 return “Hello World”
-
 app.run(debug = True)
-
 In this code your,
 Configuration part will be
 from flask import Flask
-
 app = Flask(_name_)
-
 View part will be
 @app.route(“/”)
-
 Def hello():
-
 return “Hello World”
-
 While you model or main part will be
 app.run(debug = True)
-
- 
-
-
-
 
 41. What type of a language is python? Interpreted or Compiled?
 Ans: Beginner’s Answer:
@@ -356,22 +165,11 @@ distinction can be blurry because of the presence of the bytecode compiler. This
 that source files can be run directly without explicitly creating an executable which is
 then run.
 
-
-
-
-
-
-
 42. What do you mean by python being an “interpreted language”? (Continues from previous question)
 Ans: An interpreted language​is a programming language​for which most of its
 implementations execute instructions directly, without previously compiling a program
 into machine­language​instructions. In context of Python, it means that Python program
 runs directly from the source code.
-
-
-
-
-
 
 43. What is python’s standard way of identifying a block of code?
 Ans: Indentation.
@@ -387,12 +185,6 @@ Ans:
 defmy_func(x):
 returnx**2
 
-
-
-
-
-
-
 45. Is python statically typed or dynamically typed?
 Ans: ​Dynamic.
 In a statically typed language, the type of variables must be known (and usually
@@ -401,10 +193,6 @@ dynamically typed language, objects still have a type, but it is determined at r
 You are free to bind names (variables) to different objects with a different type. So long
 as you only perform operations valid for the type the interpreter doesn’t care what type
 they actually are.
-
-
-
-
 
 46. Is python strongly typed or weakly typed language?
 Ans: ​Strong.
@@ -418,35 +206,14 @@ object ­ attempting to add numbers to strings will fail. Problems like these ar
 diagnose because the exception is raised at the point where the error occurs rather than
 at some other, potentially far removed, place.
 
-
-
-
-
-
-
 47. Create a unicode string in python with the string “This is a test string”?
 Ans: some_variable=u’Thisisateststring’
 Or
 some_variable=u”Thisisateststring”
 
-
-
-
-
-
-
 48. What is the python syntax for switch case statements?
 Ans: Python doesn’t support switch­case statements. You can use if­else statements
 for this purpose.
-
-
-
-
-
-
-
-
-
 
 49. What is a lambda statement? Provide an example.
 Ans: A lambda statement is used to create new function objects and then return them at
@@ -455,13 +222,6 @@ my_func=lambdax:x**2
 creates a function called my_func that returns the square of the argument
 passed.
 
-
-
-
-
-
-
-
 50.What are the rules for local and global variables in Python?
 Ans: If a variable is defined outside function then it is implicitly global​. If variable is
 assigned new value inside the function means it is local​. If we want to make it global we
@@ -469,16 +229,8 @@ assigned new value inside the function means it is local​. If we want to make 
 need to explicitly define it as global. Variable referenced inside the function are implicit
 global​
 
-
-
-
-
-
-
-
 51.What is the output of the following program?
 Ans: 
-
 #!/usr/bin/python
 deffun1(a):
 print’a:’,a
@@ -492,68 +244,14 @@ a:100
 locala:33
 aoutsidefun1:100
 
-
-
-
-
-
-
-
-
-
-52.What is the output of the following program?
-Ans:
-
-#!/usr/bin/python
-deffun2():
-globalb
-print’b:’,b
-b=33
-print’globalb:’,b
-b=100
-fun2()
-print’boutsidefun2′,b
-Ans​. Output:
-b:100
-globalb:33
-boutsidefun2:33
-
-
-
-
-
-
-53. What is the output of the following program?
-Ans:
-
-#!/usr/bin/python
-
-deffoo(x,y):
-globala
-a=42
-x,y=y,x
-b=33
-b=17
-c=100
-print(a,b,x,y)
-a,b,x,y=1,15,3,4
-foo(17,4)
-print(a,b,x,y)
-
-Ans​.Output:
-4217417
-421534
-
 54.What is the output of the following program?
 Ans:
-
 #!/usr/bin/python
 deffoo(x=[]):
 x.append(1)
 returnx
 foo()
 foo()
-
 Output:
 [1]
 [1,1]
@@ -567,7 +265,6 @@ specific python version to run your code.
 
 56.What is the output of the following program?
 Ans:
-
 list=[‘a’,’b’,’c’,’d’,’e’]
 printlist[10]
 Ans. Output:
@@ -1143,12 +840,6 @@ Any variable declared inside a function is known as a local variable. This varia
 
 Example:
 
-1
-2
-3
-4
-5
-6
 a=2
 def add():
 b=3
@@ -1207,28 +898,18 @@ Ans:Arrays and lists, in Python, have the same way of storing data. But, arrays 
 
 Example:
 
-1
-2
-3
-4
-5
 import array as arr
 My_Array=arr.array('i',[1,2,3,4])
 My_list=[1,'abc',1.20]
 print(My_Array)
 print(My_list)
 Output:
-
 array(‘i’, [1, 2, 3, 4]) [1, ‘abc’, 1.2]
 
 125. What are functions in Python?
 Ans:A function is a block of code which is executed only when it is called. To define a Python function, the def keyword is used.
 
 Example:
-
-1
-2
-3
 def Newfunc():
 print("Hi, Welcome to Edureka")
 Newfunc(); #calling the function
@@ -1236,20 +917,7 @@ Output: Hi, Welcome to Edureka
 
 126.What is __init__?
 Ans:__init__ is a method or constructor in Python. This method is automatically called to allocate memory when a new object/ instance of a class is created. All classes have the __init__ method.
-
 Here is an example of how to use it.
-
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
 class Employee:
 def __init__(self, name, age,salary):
 self.name = name
@@ -1262,24 +930,15 @@ print(E1.name)
 print(E1.age)
 print(E1.salary)
 Output:
-
- 
-
 XYZ
-
 23
-
 20000
-
- 
 
 127.What is a lambda function?
 Ans:An anonymous function is known as a lambda function. This function can have any number of parameters but, can have just one statement.
 
 Example:
 
-1
-2
 a = lambda x,y : x+y
 print(a(5, 6))
 Output: 11
@@ -1296,24 +955,16 @@ Pass	Used when you need some block of code syntactically, but you want to skip i
 130. What does [::-1} do?
 Ans: [::-1] is used to reverse the order of an array or a sequence.
 For example:
-1
-2
-3
 import array as arr
 My_Array=arr.array('i',[1,2,3,4,5])
 My_Array[::-1]
 Output: array(‘i’, [5, 4, 3, 2, 1])
-
 [::-1] reprints a reversed copy of ordered data structures such as an array or a list. the original array or list remains unchanged.
  
 
 131. How can you randomize the items of a list in place in Python?
 Ans: Consider the example shown below:
 
-1
-2
-3
-4
 from random import shuffle
 x = ['Keep', 'The', 'Blue', 'Flag', 'Flying', 'High']
 shuffle(x)
@@ -1324,31 +975,14 @@ The output of the following code is as below.
 132. What are python iterators?
 Ans:Iterators are objects which can be traversed though or iterated upon.
 
-133. How can you generate random numbers in Python?
-Ans: Random module is the standard module that is used to generate a random number. The method is defined as:
-
-1
-2
-import random
-random.random
-The statement random.random() method return the floating point number that is in the range of [0, 1). The function generates random float numbers. The methods that are used with the random class are the bound methods of the hidden instances. The instances of the Random can be done to show the multi-threading programs that creates a different instance of individual threads. The other random generators that are used in this are:
-
-randrange(a, b): it chooses an integer and define the range in-between [a, b). It returns the elements by selecting it randomly from the range that is specified. It doesn’t build a range object.
-uniform(a, b): it chooses a floating point number that is defined in the range of [a,b).Iyt returns the floating point number
-normalvariate(mean, sdev): it is used for the normal distribution where the mu is a mean and the sdev is a sigma that is used for standard deviation.
-The Random class that is used and instantiated creates an independent multiple random number generators.
 134. What is the difference between range & xrange?
 Ans: For the most part, xrange and range are the exact same in terms of functionality. They both provide a way to generate a list of integers for you to use, however you please. The only difference is that range returns a Python list object and x range returns an xrange object.
-
 This means that xrange doesn’t actually generate a static list at run-time like range does. It creates the values as you need them with a special technique called yielding. This technique is used with a type of object known as generators. That means that if you have a really gigantic range you’d like to generate a list for, say one billion, xrange is the function to use.
-
 This is especially true if you have a really memory sensitive system such as a cell phone that you are working with, as range will use as much memory as it can to create your array of integers, which can result in a Memory Error and crash your program. It’s a memory hungry beast.
 
 135. How do you write comments in python?
 Ans:Comments in Python start with a # character. However, alternatively at times, commenting is done using docstrings(strings enclosed within triple quotes).
-
 Example:
-
 #Comments in Python start like this
 print("Comments in Python start with a #")
 Output:  Comments in Python start with a #
@@ -1367,8 +1001,6 @@ Ans:To convert a string to lowercase, lower() function can be used.
 
 Example:
 
-1
-2
 stg='ABCD'
 print(stg.lower())
 Output: abcd
@@ -1378,17 +1010,8 @@ Ans: Multi-line comments appear in more than one line. All the lines to be comme
 
 141.What are docstrings in Python?
 Ans:Docstrings are not actually comments, but, they are documentation strings. These docstrings are within triple quotes. They are not assigned to any variable and therefore, at times, serve the purpose of comments as well.
-
 Example:
 
-1
-2
-3
-4
-5
-6
-7
-8
 """
 Using docstring as a comment.
 This code divides 2 numbers
@@ -1401,7 +1024,6 @@ Output: 2.0
 
 141. What is the purpose of is, not and in operators?
 Ans:Operators are special functions. They take one or more values and produce a corresponding result.
-
 is: returns true when 2 operands are true  (Example: “a” is ‘a’)
 
 not: returns the inverse of the boolean value
@@ -1415,17 +1037,15 @@ Help() function: The help() function is used to display the documentation string
 Dir() function: The dir() function is used to display the defined symbols.
 143. Whenever Python exits, why isn’t all the memory de-allocated?
 Ans:
-
 Whenever Python exits, especially those Python modules which are having circular references to other objects or the objects that are referenced from the global namespaces are not always de-allocated or freed.
 It is impossible to de-allocate those portions of memory that are reserved by the C library.
 On exit, because of having its own efficient clean up mechanism, Python would try to de-allocate/destroy every other object.
+
 143. What is a dictionary in Python?
 Ans: The built-in datatypes in Python is called dictionary. It defines one-to-one relationship between keys and values. Dictionaries contain pair of keys and their corresponding values. Dictionaries are indexed by keys.
 
 Let’s take an example:
-
 The following example contains some keys. Country, Capital & PM. Their corresponding values are India, Delhi and Modi respectively.
-
 1
 dict={'Country':'India','Capital':'Delhi','PM':'Modi'}
 1
@@ -1439,14 +1059,10 @@ print dict[PM]
 Modi
 144. How can the ternary operators be used in python?
 Ans: The Ternary operator is the operator that is used to show the conditional statements. This consists of the true or false values with a statement that has to be evaluated for it.
-
 Syntax:
-
 The Ternary operator will be given as:
 [on_true] if [expression] else [on_false]x, y = 25, 50big = x if x < y else y
-
 Example:
-
 The expression gets evaluated like if x<y else y, in this case if x<y is true then the value is returned as big=x and if it is incorrect then big=y will be sent as a result.
 
 146. What does this mean: *args, **kwargs? And why would we use it?
@@ -1506,13 +1122,6 @@ Ans: Elements can be added to an array using the append(), extend() and the inse
 
 Example:
 
-1
-2
-3
-4
-5
-6
-7
 a=arr.array('d', [1.1 , 2.1 ,3.1] )
 a.append(3.4)
 print(a)
@@ -1521,53 +1130,38 @@ print(a)
 a.insert(2,3.8)
 print(a)
 Output:
-
 array(‘d’, [1.1, 2.1, 3.1, 3.4])
-
 array(‘d’, [1.1, 2.1, 3.1, 3.4, 4.5, 6.3, 6.8])
-
 array(‘d’, [1.1, 2.1, 3.8, 3.1, 3.4, 4.5, 6.3, 6.8])
 
 155. How to remove values to a python array?
 Ans: Array elements can be removed using pop() or remove() method. The difference between these two functions is that the former returns the deleted value whereas the latter does not.
-
 Example:
-
 a=arr.array('d', [1.1, 2.2, 3.8, 3.1, 3.7, 1.2, 4.6])
 print(a.pop())
 print(a.pop(3))
 a.remove(1.1)
 print(a)
 Output:
-
 4.6
-
 3.1
-
 array(‘d’, [2.2, 3.8, 3.7, 1.2])
-
- 
-
 156. Does Python have OOps concepts?
 Ans: Python is an object-oriented programming language. This means that any program can be solved in python by creating an object model. However, Python can be treated as procedural as well as structural language.
-
 157. What is the difference between deep and shallow copy?
 Ans: Shallow copy is used when a new instance type gets created and it keeps the values that are copied in the new instance. Shallow copy is used to copy the reference pointers just like it copies the values. These references point to the original objects and the changes made in any member of the class will also affect the original copy of it. Shallow copy allows faster execution of the program and it depends on the size of the data that is used.
-
 Deep copy is used to store the values that are already copied. Deep copy doesn’t copy the reference pointers to the objects. It makes the reference to an object and the new object that is pointed by some other object gets stored. The changes made in the original copy won’t affect any other copy that uses the object. Deep copy makes execution of the program slower due to making certain copies for each object that is been called.
 
 158. How is Multithreading achieved in Python?
 Ans:
-
 Python has a multi-threading package but if you want to multi-thread to speed your code up, then it’s usually not a good idea to use it.
 Python has a construct called the Global Interpreter Lock (GIL). The GIL makes sure that only one of your ‘threads’ can execute at any one time. A thread acquires the GIL, does a little work, then passes the GIL onto the next thread.
 This happens very quickly so to the human eye it may seem like your threads are executing in parallel, but they are really just taking turns using the same CPU core.
 All this GIL passing adds overhead to execution. This means that if you want to make your code run faster then using the threading package often isn’t a good idea.
+
 159. What is the process of compilation and linking in python?
 Ans: The compiling and linking allows the new extensions to be compiled properly without any error and the linking can be done only when it passes the compiled procedure. If the dynamic loading is used then it depends on the style that is being provided with the system. The python interpreter can be used to provide the dynamic loading of the configuration setup files and will rebuild the interpreter.
-
 The steps that are required in this as:
-
 Create a file with any name and in any language that is supported by the compiler of your system. For example file.c or file.cpp
 Place this file in the Modules/ directory of the distribution which is getting used.
 Add a line in the file Setup.local that is present in the Modules/ directory.
@@ -1579,49 +1173,28 @@ Ans: Python libraries are a collection of Python packages. Some of the majorly u
 
 161. What is split used for?
 Ans: The split() method is used to separate a given string in Python.
-
 Example:
-
-1
-2
 a="KausalVikash python"
 print(a.split())
 Output:  [‘KausalVikash’, ‘python’]
 
 162. How to import modules in python?
 Ans: Modules can be imported using the import keyword.  You can import modules in three ways-
-
 Example:
-
-1
-2
-3
 import array           #importing using the original module name
 import array as arr    # importing using an alias name
 from array import *    #imports everything present in the array module
  
-
 163. Explain Inheritance in Python with an example.
 Ans: Inheritance allows One class to gain all the members(say attributes and methods) of another class. Inheritance provides code reusability, makes it easier to create and maintain an application. The class from which we are inheriting is called super-class and the class that is inherited is called a derived / child class.
-
 They are different types of inheritance supported by Python:
-
 Single Inheritance – where a derived class acquires the members of a single super class.
 Multi-level inheritance – a derived class d1 in inherited from base class base1, and d2 are inherited from base2.
 Hierarchical inheritance – from one base class you can inherit any number of child classes
 Multiple inheritance – a derived class is inherited from more than one base class.
  
-
 164. How are classes created in Python?
 Ans: Class in Python is created using the class keyword.
-
-Example:
-
-1
-2
-3
-4
-5
 class Employee:
 def __init__(self, name):
 self.name = name
@@ -1634,23 +1207,12 @@ Ans: In Python, the term monkey patch only refers to dynamic modifications of a 
 
 Consider the below example:
 
-1
-2
-3
-4
 # m.py
 class MyClass:
 def f(self):
 print "f()"
 We can then run the monkey-patch testing like this:
 
-1
-2
-3
-4
-5
-6
-7
 import m
 def monkey_f(self):
 print "monkey_f()"
@@ -1679,40 +1241,28 @@ Ans: Python does not deprive access to an instance variable or function. Python 
 171. How to create an empty class in Python?
 Ans: An empty class is a class that does not have any code defined within its block. It can be created using the pass keyword. However, you can create objects of this class outside the class itself. IN PYTHON THE PASS command does nothing when its executed. it’s a null statement.
 For example-
-1
-2
-3
-4
-5
+
 class a:
   &nbsp; pass
 obj=a()
 obj.name="xyz"
 print("Name = ",obj.name)
 Output: 
-
 Name =  xyz
  
-
 172.What’s The Process To Get The Home Directory Using ‘~’ In Python?
 Ans: You need to import the os module, and then just a single line would do the rest.
-
 import os
 print (os.path.expanduser('~'))
 Output:
-
 /home/runner
  
-
 173.How To Find Bugs Or Perform Static Analysis In A Python Application?
 Ans:
-
 You can use PyChecker, which is a static analyzer. It identifies the bugs in Python project and also reveals the style and complexity related bugs.
 Another tool is Pylint, which checks whether the Python module satisfies the coding standard.
 174.When Is The Python Decorator Used?
 Ans: Python decorator is a relative change that you do in Python syntax to adjust the functions quickly.
-
- 
 
 175.Can Python be used for web client and web server side programming? And which one is best suited to Python?
 Ans:  Python is best suited for web server-side application development due to its vast set of features for creating business logic, database interactions, web server hosting etc.
@@ -2938,22 +2488,15 @@ Ans: We will use the join() method for this.
 >>> s
 o/p= ‘one two three four five six seven’
 
- 
-
 279. How will you remove a duplicate element from a list?
 Ans: We can turn it into a set to do that.
-
 >>> list=[1,2,1,3,4,2]
 >>> set(list)
 {1, 2, 3, 4}
 
- 
-
 280. Can you explain the life cycle of a thread?
 Ans: 
-
 python scripting interview questions
-
 To create a thread, we create a class that we make override the run method of the thread class. Then, we instantiate it.
 A thread that we just created is in the new state. When we make a call to start() on it, it forwards the threads for scheduling. These are in the ready state.
 When execution begins, the thread is in the running state.
@@ -2961,318 +2504,189 @@ Calls to methods like sleep() and join() make a thread wait. Such a thread is in
 When a thread is done waiting or executing, other waiting threads are sent for scheduling.
 A running thread that is done executing terminates and is in the dead state.
  
-
 281. Explain the //, %, and ** operators in Python?
 Ans: The // operator performs floor division. It will return the integer part of the result on division.
-
 >>> 7//2
 3
-
 Normal division would return 3.5 here.
-
 Similarly, ** performs exponentiation. a**b returns the value of a raised to the power b.
-
 >>> 2**10
 1024
-
 Finally, % is for modulus. This gives us the value left after the highest achievable division.
-
 >>> 13%7
 6
-
 >>> 3.5%1.5
 0.5 
 
- 
-
 282. What are membership operators?
 Ans:  With the operators ‘in’ and ‘not in’, we can confirm if a value is a member in another.
-
 >>> ‘me’ in ‘disappointment’
 True
-
 >>> ‘us’ not in ‘disappointment’
 True
 
- 
-
 283. Explain identity operators in Python?
 Ans: The operators ‘is’ and ‘is not’ tell us if two values have the same identity.
-
 >>> 10 is ’10’
 False
-
 >>> True is not False
 True
 
- 
-
 284. Finally, tell us about bitwise operators in Python?
-
 Ans: 
-
 python interview questions for freshers
-
 These operate on values bit by bit.
-
 AND (&) This performs & on each bit pair.
-
 >>> 0b110 & 0b010
 2
-
 OR (|) This performs | on each bit pair.
-
 >>> 3|2
-3
-
 XOR (^) This performs an exclusive-OR operation on each bit pair.
-
 >>> 3^2
-1
-
 Binary One’s Complement (~) This returns the one’s complement of a value.
-
 >>> ~2
--3
 
 Binary Left-Shift (<<) This shifts the bits to the left by the specified amount.
-
 >>> 1<<2
-4
-
-Here, 001 was shifted to the left by two places to get 100, which is binary for 4.
-
+Hee, 001 was shifted to the left by two places to get 100, which is binary for 4.
 Binary Right-Shift (>>)
-
 >>> 4>>2
-1
-
- 
 
 285. What data types does Python support?
 Ans:  Python provides us with five kinds of data types:
-
 Numbers – Numbers use to hold numerical values.
-
 >>> a=7.0
 >>>
 Strings – A string is a sequence of characters. We declare it using single or double quotes.
-
 >>> title=“Ayushi’s Book”
 Lists – A list is an ordered collection of values, and we declare it using square brackets.
-
->>> colors=[‘red’,‘green’,‘blue’]
+>>> coors=[‘red’,‘green’,‘blue’]
 >>> type(colors)
 <class ‘list’>
-
 Tuples – A tuple, like a list, is an ordered collection of values. The difference. However, is that a tuple is immutable. This means that we cannot change a value in it.
-
 >>> name=(‘Ayushi’,‘Sharma’)
 >>> name[0]=‘Avery’
 Traceback (most recent call last):
-
 File “<pyshell#129>”, line 1, in <module>
-
 name[0]=’Avery’
-
 TypeError: ‘tuple’ object does not support item assignment
-
 Dictionary – A dictionary is a data structure that holds key-value pairs. We declare it using curly braces.
-
 >>> squares={1:1,2:4,3:9,4:16,5:25}
 >>> type(squares)
 <class ‘dict’>
-
 >>> type({})
 <class ‘dict’>
-
 We can also use a dictionary comprehension:
-
 >>> squares={x:x**2 for x in range(1,6)}
 >>> squares
 {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
 
- 
-
 286. How would you convert a string into an int in Python?
 Ans: If a string contains only numerical characters, you can convert it into an integer using the int() function.
-
 >>> int(‘227’)
 227
-
 Let’s check the types:
-
 >>> type(‘227’)
 <class ‘str’>
-
 >>> type(int(‘227’))
 <class ‘int’>
-
- 
-
 287. How do you take input in Python?
 Ans:  For taking input from the user, we have the function input(). In Python 2, we had another function raw_input().
-
 The input() function takes, as an argument, the text to be displayed for the task:
-
 >>> a=input(‘Enter a number’)
 Enter a number7
-
 But if you have paid attention, you know that it takes input in the form of a string.
-
 >>> type(a)
 <class ‘str’>
-
 Multiplying this by 2 gives us this:
-
 >>> a*=2
 >>> a
 ’77’
-
 So, what if we need to work on an integer instead?
-
 We use the int() function for this.
-
 >>> a=int(input(‘Enter a number’))
 Enter a number7
-
 Now when we multiply it by 2, we get this:
-
 >>> a*=2
 >>> a
 14
 
- 
-
 288. What is a function?
 Ans: When we want to execute a sequence of statements, we can give it a name. Let’s define a function to take two numbers and return the greater number.
-
 >>> def greater(a,b):
 return a is a>b else b
 >>> greater(3,3.5)
 3.5
 
- 
-
- 
-
 289. What is recursion?
 Ans: When a function makes a call to itself, it is termed recursion. But then, in order for it to avoid forming an infinite loop, we must have a base condition.
-
 Let’s take an example.
-
 >>> def facto(n):
 if n==1: return 1
 return n*facto(n-1)
 >>> facto(4)
 24
 
- 
-
- 
-
 290. What do you know about relational operators in Python?
 Ans:  
-
 Top python interview questions with answers
-
- 
-
 Relational operators compare values.
-
 Less than (<) If the value on the left is lesser, it returns True.
-
 >>> ‘hi’<‘Hi’
 False
 Greater than (>) If the value on the left is greater, it returns True.
-
 >>> 1.1+2.2>3.3
 True
-
-This is because of the flawed floating-point arithmetic in Python, due to hardware dependencies.
-
+this is because of the flawed floating-point arithmetic in Python, due to hardware dependencies.
 Less than or equal to (<=) If the value on the left is lesser than or equal to, it returns True.
-
 >>> 3.0<=3
 True
-
 Greater than or equal to (>=) If the value on the left is greater than or equal to, it returns True.
-
 >>> True>=False
 True
-
 Equal to (==) If the two values are equal, it returns True.
-
 >>> {1,3,2,2}=={1,2,3}
 True
-
 Not equal to (!=) If the two values are unequal, it returns True.
-
 >>> True!=0.1
 True
-
 >>> False!=0.1
 True
 
- 
-
 291. What are assignment operators in Python?
 Ans: 
-
- 
-
 python coding interview questions
-
 We can combine all arithmetic operators with the assignment symbol.
-
 >>> a=7
 >>> a+=1
 >>> a
 8
-
 >>> a-=1
 >>> a
 7
-
 >>> a*=2
 >>> a
 14
-
 >>> a/=2
 >>> a
 7.0
-
 >>> a**=2
 >>> a
 49.0
-
 >>> a//=3
 >>> a
 16.0
-
->>> a%=4
+0>> a%=4
 >>> a
 0.0
-
- 
-
- 
-
 292. Explain logical operators in Python.?
 Ans:  We have three logical operators- and, or, not.
-
 >>> False and True
 False
-
 >>> 7<7 or True
 True
-
 >>> not 2==2
 False
-
- 
-
- 
 
 293. What does the function zip() do?
 Ans:  One of the less common functions with beginners, zip() returns an iterator of tuples.
@@ -3285,283 +2699,169 @@ Here, it pairs items from the two lists and creates tuples with those. But it do
 >>> list(zip((‘a’,‘b’,‘c’),(1,2,3)))
 [(‘a’, 1), (‘b’, 2), (‘c’, 3)]
 
- 
-
 294. How can you declare multiple assignments in one statement?
 Ans: There are two ways to do this:
-
 First – 
-
 >>> a,b,c=3,4,5 #This assigns 3, 4, and 5 to a, b, and c respectively
 Second – 
-
 >>> a=b=c=3 #This assigns 3 to a, b, and c
- 
-
- 
 
 295. If you are ever stuck in an infinite loop, how will you break out of it?
 Ans: For this, we press Ctrl+C. This interrupts the execution. Let’s create an infinite loop to demonstrate this.
-
 >>> def counterfunc(n):
 while(n==7):print(n)
 >>> counterfunc(7)
 7
-
 7
-
 7
-
 7
-
 7
-
 7
-
 7
-
 7
-
 7
-
 7
-
 7
-
 7
-
 7
-
 7
-
 7
-
 7
-
 7
-
 Traceback (most recent call last):
-
 File “<pyshell#332>”, line 1, in <module>
-
 counterfunc(7)
-
 File “<pyshell#331>”, line 2, in counterfunc
-
 while(n==7):print(n)
-
 KeyboardInterrupt
-
- 
-
- 
 
 296. How is a .pyc file different from a .py file?
 Ans: While both files hold bytecode, .pyc is the compiled version of a Python file. It has platform-independent bytecode. Hence, we can execute it on any platform that supports the .pyc format. Python automatically generates it to improve performance(in terms of load time, not speed).
 
- 
-
 297. How many types of objects does Python support?
 Ans: Immutable objects- Those which do not let us modify their contents. Examples of these will be tuples, booleans, strings, integers, floats, and complexes. Iterations on such objects are faster.
-
 >>> tuple=(1,2,4)
 >>> tuple
 (1, 2, 4)
-
 >>> 2+4j
 (2+4j)
-
 Mutable objects – Those that let you modify their contents. Examples of these are lists, sets, and dicts. Iterations on such objects are slower.
-
 >>> [2,4,9]
 [2, 4, 9]
-
 >>> dict1={1:1,2:2}
 >>> dict1
 {1: 1, 2: 2}
-
 While two equal immutable objects’ reference variables share the same address, it is possible to create two mutable objects with the same content.
-
- 
 
 298. When is the else part of a try-except block executed?
 Ans: In an if-else block, the else part is executed when the condition in the if-statement is False. But with a try-except block, the else part executes only if no exception is raised in the try part.
 
- 
-
- 
-
 299. Explain join() and split() in Python?
 Ans: 
-
 1)join() lets us join characters from a string together by a character we specify.
-
 >>> ‘,’.join(‘12345’)
 ‘1,2,3,4,5’
-
 2) split() lets us split a string around the character we specify.
-
 >>> ‘1,2,3,4,5’.split(‘,’)
 [‘1’, ‘2’, ‘3’, ‘4’, ‘5’]
 
- 
-
 300. Explain a few methods to implement Functionally Oriented Programming in Python?
 Ans: 
-
 Sometimes, when we want to iterate over a list, a few methods come in handy.
-
 a. filter()
-
 Filter lets us filter in some values based on conditional logic.
-
 >>> list(filter(lambda x:x>5,range(8)))
 [6, 7]
-
 b. map()
-
 Map applies a function to every element in an iterable.
-
 >>> list(map(lambda x:x**2,range(8)))
 [0, 1, 4, 9, 16, 25, 36, 49]
 c. reduce()
-
 Reduce repeatedly reduces a sequence pair-wise until we reach a single value.
-
 >>> from functools import reduce
 >>> reduce(lambda x,y:x-y,[1,2,3,4,5])
 -13
 
 300. Explain a few methods to implement Functionally Oriented Programming in Python?
 Ans: 
-
 Sometimes, when we want to iterate over a list, a few methods come in handy.
-
 a. filter()
-
 Filter lets us filter in some values based on conditional logic.
-
 >>> list(filter(lambda x:x>5,range(8)))
 [6, 7]
-
 b. map()
-
 Map applies a function to every element in an iterable.
-
 >>> list(map(lambda x:x**2,range(8)))
 [0, 1, 4, 9, 16, 25, 36, 49]
 c. reduce()
-
 Reduce repeatedly reduces a sequence pair-wise until we reach a single value.
-
 >>> from functools import reduce
 >>> reduce(lambda x,y:x-y,[1,2,3,4,5])
 -13
-
- 
 
 301. Is del the same as remove()? What are they?
 Ans: 
-
 del and remove() are methods on lists/ ways to eliminate elements.
-
 >>> list=[3,4,5,6,7]
 >>> del list[3]
 >>> list
 [3, 4, 5, 7]
-
 >>> list.remove(5)
 >>> list
 [3, 4, 7]
-
 While del lets us delete an element at a certain index, remove() lets us remove an element by its value.
-
- 
 
 302. Explain a few methods to implement Functionally Oriented Programming in Python?
 Ans: Sometimes, when we want to iterate over a list, a few methods come in handy.
-
 a. filter()
-
 Filter lets us filter in some values based on conditional logic.
-
 >>> list(filter(lambda x:x>5,range(8)))
 [6, 7]
-
 b. map()
-
 Map applies a function to every element in an iterable.
-
 >>> list(map(lambda x:x**2,range(8)))
 [0, 1, 4, 9, 16, 25, 36, 49]
 c. reduce()
-
 Reduce repeatedly reduces a sequence pair-wise until we reach a single value.
-
 >>> from functools import reduce
 >>> reduce(lambda x,y:x-y,[1,2,3,4,5])
 -13
-
  
-
 304. How do you open a file for writing?
 Ans: Let’s create a text file on our Desktop and call it tabs.txt. To open it to be able to write to it, use the following line of code-
-
 >>> file=open(‘tabs.txt’,‘w’)
 This opens the file in writing mode. You should close it once you’re done.
-
 >>> file.close()
  
-
- 
-
 305. Difference between the append() and extend() methods of a list.
 Ans: The methods append() and extend() work on lists. While append() adds an element to the end of the list, extend adds another list to the end of a list.
-
 Let’s take two lists.
-
 >>> list1,list2=[1,2,3],[5,6,7,8]
 This is how append() works:
-
 >>> list1.append(4)
 >>> list1
 [1, 2, 3, 4]
-
 And this is how extend() works:
-
 >>> list1.extend(list2)
 >>> list1
 [1, 2, 3, 4, 5, 6, 7, 8]
 
- 
-
 306. What are the different file-processing modes with Python?
 We have the following modes-
-
 read-only – ‘r’
 write-only – ‘w’
 read-write – ‘rw’
 append – ‘a’
 We can open a text file with the option ‘t’. So to open a text file to read it, we can use the mode ‘rt’. Similarly, for binary files, we use ‘b’.
 
- 
-
- 
-
 307. What does the map() function do?
 Ans: map() executes the function we pass to it as the first argument; it does so on all elements of the iterable in the second argument. Let’s take an example, shall we?
-
 >>> for i in map(lambda i:i**3, (2,3,7)):
 print(i)
 8
 27
 343
-
 This gives us the cubes of the values 2, 3, and 7.
-
- 
-
- 
 
 308. Is there a way to remove the last object from a list?
 Yes, there is. Try running the following piece of code-
@@ -3572,12 +2872,6 @@ Yes, there is. Try running the following piece of code-
 
 >>> list
 [1, 2, 3, 4]
-
- 
-
- 
-
- 
 
 309. How will you convert an integer to a Unicode character?
 Ans: This is simple. All we need is the chr(x) built-in function. See how.
@@ -3591,10 +2885,6 @@ Ans: This is simple. All we need is the chr(x) built-in function. See how.
 >>> chr(67)
 ‘C’
 
- 
-
- 
-
 310. So does recursion cause any trouble?
 Ans: Sure does:
 
@@ -3602,11 +2892,6 @@ Needs more function calls.
 Each function call stores a state variable to the program stack- consumes memory, can cause memory overflow.
 Calling a function consumes time.
  
-
- 
-
- 
-
 311. What good is recursion?
 Ans: With recursion, we observe the following:
 
@@ -3614,15 +2899,6 @@ Need to put in less efforts.
 Smaller code than that by loops.
 Easier-to-understand code.
  
-
- 
-
- 
-
- 
-
- 
-
 312. Can you remove the whitespaces from the string “aaa bbb ccc ddd eee”?
 Ans: I can think of three ways to do this.
 
@@ -3647,20 +2923,12 @@ Using replace()-
 >>> s1
 ‘aaabbbcccdddeee’
 
- 
-
- 
-
- 
-
 313. How do you get the current working directory using Python?
 Ans: Working on software with Python, you may need to read and write files from various directories. To find out which directory we’re presently working under, we can borrow the getcwd() method from the os module.
 
 >>> import os
 >>> os.getcwd()
 ‘C:\\Users\\Raj\\AppData\\Local\\Programs\\Python\\Python37-32’
-
- 
 
 314. What are the file-related modules we have in Python?
 Ans: We have the following libraries and modules that let us manipulate text and binary files on our file systems-
@@ -3669,12 +2937,6 @@ os
 os.path
 shutil
 
- 
-
- 
-
- 
-
 315. Explain the uses of the modules sqlite3, ctypes, pickle, traceback, and itertools.
 sqlite3- Helps with handling databases of type SQLite
 ctypes- Lets create and manipulate C data types in Python
@@ -3682,11 +2944,6 @@ pickle- Lets put any data structure to external files
 traceback- Allows extraction, formatting, and printing of stack traces
 itertools– Supports working with permutations, combinations, and other useful iterables.
  
-
- 
-
- 
-
 316. How will you print the contents of a file?
 >>> try:
 with open(‘tabs.txt’,‘r’) as f:
@@ -3694,19 +2951,10 @@ print(f.read())
 except IOError:
 print(“File not found”)
  
-
- 
-
- 
-
 317. What is Virtualenv in Python?
 Ans: virtualenv is a tool to create isolated Python environments. virtualenv creates a folder which contains all the necessary executables to use the packages that a Python project would need. It can be used standalone, in place of Pipenv.
 
 Install virtualenv via pip: $ pip install virtualenv.
-
- 
-
- 
 
 318. What is the function of “self”?
 Ans: Self is a variable that represents the instance of the object to itself. In most of the object oriented programming language, this is passed to the methods as a hidden parameters that is defined by an object. But, in python, it is declared and passed explicitly. It is the first argument that gets created in the instance of the class A and the parameters to the methods are passed automatically. It refers to separate instance of the variable for individual objects.
@@ -3720,10 +2968,6 @@ Now when ObjectA.methodA(arg1, arg2) is called, python internally converts it fo
 
 ClassA.methodA(ObjectA, arg1, arg2)
 The self variable refers to the object itself.
-
- 
-
- 
 
 319. What does the Python nonlocal statement do (in Python 3.0 and later)?
 Ans: In short, it lets you assign values to a variable in an outer (but non-global) scope.
@@ -3739,23 +2983,14 @@ def make_counter():
         count += 1
         return count
     return counter
- 
-
- 
-
- 
 
 320. What are the wheels and eggs? What is the difference?
 Ans:  
 
 Wheel and Egg are both packaging formats that aim to support the use case of needing an install artifact that doesn’t require building or compilation, which can be costly in testing and production workflows.
-
 The Egg format was introduced by setuptools in 2004, whereas the Wheel format was introduced by PEP 427 in 2012.
-
 Wheel is currently considered the standard for built and binary packaging for Python.
-
 Here’s a breakdown of the important differences between Wheel and Egg.
-
 Wheel has an official PEP. Egg did not.
 Wheel is a distribution format, i.e a packaging format. 1 Egg was both a distribution format and a runtime installation format (if left zipped), and was designed to be importable.
 Wheel archives do not include .pyc files. Therefore, when the distribution only contains Python files (i.e. no compiled extensions), and is compatible with Python 2 and 3, it’s possible for a wheel to be “universal”, similar to an sdist.
@@ -3764,21 +2999,11 @@ Wheel has a richer file naming convention. A single wheel archive can indicate i
 Wheel is versioned. Every wheel file contains the version of the wheel specification and the implementation that packaged it.
 Wheel is internally organized by sysconfig path type, therefore making it easier to convert to other formats.
  
-
- 
-
- 
-
 321. What is webpack?
 Ans: Webpack is a build tool that puts all of your assets, including Javascript, images, fonts, and CSS, in a dependency graph. Webpack lets you use require() in your source code to point to local files, like images, and decide how they’re processed in your final Javascript bundle, like replacing the path with a URL pointing to a CDN.
 
- 
-
- 
-
 322. Name some benefits of using webpack
 Ans: Webpack and static assets in a dependency graph offers many benefits. Here’s a few:
-
 Dead asset elimination. This is killer, especially for CSS rules. You only build the images and CSS into your dist/ folder that your application actually needs.
 Easier code splitting. For example, because you know that your file Homepage.js only requires specific CSS files, Webpack could easily build a homepage.css file to greatly reduce initial file size.
 You control how assets are processed. If an image is below a certain size, you could base64 encode it directly into your Javascript for fewer HTTP requests. If a JSON file is too big, you can load it from a URL. You can require('./style.less') and it’s automaticaly parsed by Less into vanilla CSS.
@@ -3786,26 +3011,14 @@ Stable production deploys. You can’t accidentally deploy code with images miss
 Webpack will slow you down at the start, but give you great speed benefits when used correctly. You get hot page reloading. True CSS management. CDN cache busting because Webpack automatically changes file names to hashes of the file contents, etc.
 Webpack is the main build tool adopted by the React community.
 
- 
-
- 
-
- 
-
 323. Name some plugins you think are very important and helpful?
 Ans: 
-
 CommonsChunkPlugin – creates a separate file (known as a chunk), consisting of common modules shared between multiple entry points.
 DefinePlugin – allows you to create global constants which can be configured at compile time.
 HtmlWebpackPlugin – simplifies creation of HTML files to serve your webpack bundles.
 ExtractTextWebpackPlugin – Extract text from a bundle, or bundles, into a separate file.
 CompressionWebpackPlugin – Prepare compressed versions of assets to serve them with Content-Encoding.
  
-
- 
-
- 
-
 324. Webpack gives us a dependency graph. What does that mean?
 Ans:  Any time one file depends on another, webpack treats this as a dependency. This allows webpack to take non-code assets, such as images or web fonts, and also provide them as dependencies for your application.
 
@@ -3816,18 +3029,8 @@ When webpack processes your application, it starts from a list of modules define
 
 The require('logo.png') source code never actually gets executed in the browser (nor in Node.js). Webpack builds a new Javascript file, replacing require() calls with valid Javascript code, such as URLs. The bundled file is what’s executed by Node or the browser.
 
- 
-
- 
-
 325. What are metaclasses in Python?
 Ans: A metaclass is the class of a class. A class defines how an instance of the class (i.e. an object) behaves while a metaclass defines how a class behaves. A class is an instance of a metaclass. You can call it a ‘class factory’.
-
- 
-
- 
-
- 
 
 326. How to make a chain of function decorators?
 Ans:  How can I make two decorators in Python that would do the following?
@@ -3869,27 +3072,15 @@ def log(s):
 print hello()        # returns "<b><i>hello world</i></b>"
 print hello.__name__ # with functools.wraps() this returns "hello"
 print log('hello')   # returns "<b><i>hello</i></b>"
-
-
-
-
-
- 
-
 327. What is the difference between @staticmethod and @classmethod?
 Ans: A staticmethod is a method that knows nothing about the class or instance it was called on. It just gets the arguments that were passed, no implicit first argument. It’s definition is immutable via inheritance.
-
-class C:
-    @staticmethod
+class C:@staticmethod
     def f(arg1, arg2, ...): ... 
 A classmethod, on the other hand, is a method that gets passed the class it was called on, or the class of the instance it was called on, as first argument. Its definition follows Sub class, not Parent class, via inheritance.
-
 class C:
    @classmethod
    def f(cls, arg1, arg2, ...): ...  
 If your method accesses other variables/methods in your class then use @classmethod.
-
- 
 
 328. What’s the difference between a Python module and a Python package?
 Ans: Any Python file is a module, its name being the file’s base name without the .py extension.
@@ -3901,24 +3092,13 @@ Packages are modules too. They are just packaged up differently; they are formed
 
 from my_package.timing.danger.internets import function_of_love
  
-
- 
-
 329. What is GIL?
 Ans: Python has a construct called the Global Interpreter Lock (GIL). The GIL makes sure that only one of your ‘threads’ can execute at any one time. A thread acquires the GIL, does a little work, then passes the GIL onto the next thread. This happens very quickly so to the human eye it may seem like your threads are executing in parallel, but they are really just taking turns using the same CPU core. All this GIL passing adds overhead to execution.
-
- 
-
- 
 
 330. Is it a good idea to use multi-thread to speed your Python code?
 Ans:  Python doesn’t allow multi-threading in the truest sense of the word. It has a multi-threading package but if you want to multi-thread to speed your code up, then it’s usually not a good idea to use it.
 
 Python has a construct called the Global Interpreter Lock (GIL). The GIL makes sure that only one of your ‘threads’ can execute at any one time. A thread acquires the GIL, does a little work, then passes the GIL onto the next thread. This happens very quickly so to the human eye it may seem like your threads are executing in parallel, but they are really just taking turns using the same CPU core. All this GIL passing adds overhead to execution.
-
- 
-
- 
 
 331. How do I write a function with output parameters (call by reference)?
 Ans: In Python arguments are passed by assignment. When you call a function with a parameter, a new reference is created that refers to the object passed in. This is separate from the reference that was used in the function call, so there’s no way to update that reference and make it refer to a new object.
@@ -3936,33 +3116,16 @@ x, y = 'old-value', 99
 x, y = func2(x, y)
 print(x, y)     
  
-
- 
-
- 
-
 332. Whenever you exit Python, is all memory de-allocated?
 Ans:  The answer here is no. The modules with circular references to other objects, or to objects referenced from global namespaces, aren’t always freed on exiting Python. Plus, it is impossible to de-allocate portions of memory reserved by the C library.
 
- 
-
- 
-
- 
-
 333. What is the purpose of the single underscore “_” variable in Python?
 Ans: has 4 main conventional uses in Python:
-
 To hold the result of the last executed expression(/statement) in an interactive interpreter session. This precedent was set by the standard CPython interpreter, and other interpreters have followed suit
 For translation lookup in i18n (see the gettext documentation for example), as in code like: raise forms.ValidationError(_("Please enter a correct username"))
 As a general purpose “throwaway” variable name to indicate that part of a function result is being deliberately ignored (Conceptually, it is being discarded.), as in code like: label, has_label, _ = text.partition(':').
 As part of a function definition (using either def or lambda), where the signature is fixed (e.g. by a callback or parent class API), but this particular function implementation doesn’t need all of the parameters, as in code like: callback = lambda _: True
- 
-
- 
-
- 
-
+  
 334. How is set() implemented internally? 
 I’ve seen people say that set objects in python have O(1) membership-checking. How are they implemented internally to allow this? What sort of data structure does it use? What other implications does that implementation have?
 
@@ -3973,26 +3136,12 @@ So basically a set uses a hashtable as its underlying data structure. This expla
 
 Also, it worth to mention when people say sets have O(1) membership-checking, they are talking about the average case. In the worst case (when all hashed values collide) membership-checking is O(n).
 
- 
-
- 
-
- 
-
- 
-
 335. What is MRO in Python? How does it work?
 Ans:  Method Resolution Order (MRO) it denotes the way a programming language resolves a method or attribute. Python supports classes inheriting from other classes. The class being inherited is called the Parent or Superclass, while the class that inherits is called the Child or Subclass.
 
 In Python,** method resolution order** defines the order in which the base classes are searched when executing a method. First, the method or attribute is searched within a class and then it follows the order we specified while inheriting. This order is also called Linearization of a class and set of rules are called MRO (Method Resolution Order). While inheriting from another class, the interpreter needs a way to resolve the methods that are being called via an instance. Thus we need the method resolution order.
 
 Python resolves method and attribute lookups using the C3 linearisation of the class and its parents. The C3 linearisation is neither depth-first nor breadth-first in complex multiple inheritance hierarchies.
-
- 
-
- 
-
- 
 
 336. What is the difference between old style and new style classes in Python?
 Ans:  Declaration-wise:
@@ -4009,239 +3158,101 @@ Old-style classes don’t.
 class OldStyleClass():
     pass
 Python 3 Note:
-
 Python 3 doesn’t support old style classes, so either form noted above results in a new-style class.
-
 Also, MRO (Method Resolution Order) changed:
-
 Classic classes do a depth first search from left to right. Stop on first match. They do not have the mro attribute.
 New-style classes MRO is more complicated to synthesize in a single English sentence. One of its properties is that a Base class is only searched for once all its Derived classes have been. They have the mro attribute which shows the search order.
 Some other notes:
-
 New style class objects cannot be raised unless derived from Exception.
 Old style classes are still marginally faster for attribute lookup.
  
-
- 
-
- 
-
- 
-
 337. Why Python (CPython and others) uses the GIL?
-Ans: In CPython, the global interpreter lock, or GIL, is a mutex that prevents multiple native threads from executing Python bytecodes at once. This lock is necessary mainly because CPython’s memory management is not thread-safe.
-
+Ans: In CPython, the global interpreter lock, or GIL, is a mutethat prevents multiple native threads from executing Python bytecodes at once. This lock is necessary mainly because CPython’s memory management is not thread-safe.
 Python has a GIL as opposed to fine-grained locking for several reasons:
-
 It is faster in the single-threaded case.
 It is faster in the multi-threaded case for i/o bound programs.
 It is faster in the multi-threaded case for cpu-bound programs that do their compute-intensive work in C libraries.
 It makes C extensions easier to write: there will be no switch of Python threads except where you allow it to happen (i.e. between the Py_BEGIN_ALLOW_THREADS and Py_END_ALLOW_THREADS macros).
 It makes wrapping C libraries easier. You don’t have to worry about thread-safety. If the library is not thread-safe, you simply keep the GIL locked while you call it
- 
-
- 
-
- 
 
 338. How are arguments passed by value or by reference in python?
-Ans: 
-
-Pass by value: Copy of the actual object is passed. Changing the value of the copy of the object will not change the value of the original object.
+Ans: Pass by value: Copy of the actual object is passed. Changing the value of the copy of the object will not change the value of the original object.
 Pass by reference: Reference to the actual object is passed. Changing the value of the new object will change the value of the original object.
 In Python, arguments are passed by reference, i.e., reference to the actual object is passed.
 
 def appendNumber(arr):
     arr.append(4)
-
 arr = [1, 2, 3]
-
 print(arr)  #Output: => [1, 2, 3]
 appendNumber(arr)
 print(arr)  #Output: => [1, 2, 3, 4]
- 
-
- 
-
- 
 
 339. What is a boolean in Python?
 Ans: Boolean is one of the built-in data types in Python, it mainly contains two values, and they are true and false.
-
 Python bool() is the method used to convert a value to a boolean value.
-
-1
 Syntax for bool() method: bool([a])
  
-
- 
-
- 
-
 340. What is Python String format and Python String replace?
 Ans:  Python String Format: The String format() method in Python is mainly used to format the given string into an accurate output or result.
-
 Syntax for String format() method:
-
-1
 template.format(p0, p1, ..., k0=v0, k1=v1, ...)
 Python String Replace: This method is mainly used to return a copy of the string in which all the occurrence of the substring is replaced by another substring.
-
 Syntax for String replace() method: 
-
-1
 str.replace(old, new [, count])
- 
-
- 
-
- 
-
- 
-
- 
 
 341. Name some of the built-in modules in Python?
 Ans: The built-in modules in Python are:
-
 sys module
 OS module
 random module
 collection module
 JSON
 Math module
- 
-
- 
-
- 
-
- 
 
 342. How do we convert the string to lowercase?
 Ans: lower() function is used to convert string to lowercase.
-
 Example:
-
-1
-2
 str = 'XYZ'
 print(str.lower())
 Output:
-1
 xyz
  
-
- 
-
- 
-
- 
-
 343. How to remove values from a Python array?
 Ans: The elements can be removed from a Python array using remove() or pop() function. The difference between pop() and remove() will be explained in the below example.
-
-Example:
-
-1
-2
-3
-4
-5
-x = arr.array('d',  [ 1.0, 2.2, 3.4, 4.8, 5.2, 6.6, 7.3])
+Example:x = arr.array('d',  [ 1.0, 2.2, 3.4, 4.8, 5.2, 6.6, 7.3])
 print(x.pop())
 print(x.pop(3))
 x.remove(1.0)
 print(a)
 Output:
-
-1
-2
-3
 7.3
 4.8
 array(‘d’, [2.2, 3.4, 5.2, 6.6])
  
-
- 
-
- 
-
 344.  What is Try Block?
 A block which is preceded by the try keyword is known as a try block
 
 Syntax:
-
-1
-2
-3
 try{
    //statements that may cause an exception
 }
  
-
- 
-
- 
-
- 
-
 345. How can we access a module written in Python from C?
 Ans: We can access the module written in Python from C by using the following method.
 
 1
 Module == PyImport_ImportModule("<modulename>");
  
-
- 
-
- 
-
 346. Write a program to count the number of capital letters in a file?
 Ans:
-1
-2
-3
-4
-5
-6
 with open(SOME_LARGE_FILE) as countletter:
 count = 0
 text = countletter.read()
 for character in text:
 if character.isupper():
 count += 1
- 
-
- 
-
- 
-
- 
-
-347. Write a program to display the Fibonacci sequence in Python?
+ 347. Write a program to display the Fibonacci sequence in Python?
 Ans:
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
 # Displaying Fibonacci sequence
 n = 10
 # first two terms
@@ -4264,37 +3275,16 @@ else:
        n1 = nth
        x += 1
 Output:
-
-1
 0, 1, 1, 2, 3, 5, 8, 13, 21, 34,
  
-
- 
-
- 
-
 348. Write a program in Python to produce Star triangle?
 Ans: The code to produce star triangle is as follows:
-
-1
-2
-3
-4
 def pyfun(r):
 for a in range(r):
 print(' '*(r-x-1)+'*'*(2*x+1)) 
 pyfun(9)
 Output: 
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
         *
        ***
       *****
@@ -4305,29 +3295,8 @@ Output:
  ***************
 *****************
  
-
- 
-
 349. Write a program to check whether the given number is prime or not?
 Ans: The code to check prime number is as follows:
-
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
 # program to check the number is prime or not
 n1 = 409
 # num1 = int(input("Enter any one number: "))
@@ -4345,32 +3314,10 @@ print(n1,"is a prime number")
 # or equal to the value 1, then it is not prime number
 else:
 print(n1,"is not a prime number")
-Output:
+Output:409 is a prime number
 
-1
-409 is a prime number
- 
-
- 
-
- 
-
- 
-
-350.  Write Python code to check the given sequence is a palindrome or not?
+ 350.  Write Python code to check the given sequence is a palindrome or not?
 Ans:
-
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
 # Python code to check a given sequence
 #  is palindrome or not
 my_string1 = 'MOM'
@@ -4386,28 +3333,17 @@ Output:
 
 1
 it is a palindrome
- 
-
- 
-
- 
-
- 
-
-351. Write Python code to sort a numerical dataset?
+ 351. Write Python code to sort a numerical dataset?
 Ans: The code to sort a numerical dataset is as follows:
 
-1
-2
-3
-4
+
 list = [ "13", "16", "1", "5" , "8"]
 list = [int(x) for x in the list]
 list.sort()
 print(list)
 Output: 
 
-1
+
 1, 5, 8, 13, 16
  
 
