@@ -10,3 +10,216 @@ for i in range(2000, 3201):
 
 print(",".join(numbers))
 
+Question-answer:
+1. What is an IDE? An IDE stands for Integrated Development Environment. Examples include PyCharm, Visual Studio Code, Eclipse, and Atom. 
+2. What is a Programming Language? It is a medium to communicate with computers. 
+3. What is a Syntax? Syntax refers to a set of rules in programming. 
+4. What is a Library? A library is a set of programs that has been wri en, bundled together, and can be directly used to write programs. 
+5. Where is Python commonly used? Python is used in web development, data science, machine learning (ML), 
+game development, scrip ng, automa on, and integra on with cloud. 
+6. What are keywords in Python? Every programming language has key/reserved words that are used to create the language. Examples include for, 
+while, break, con nue, def, and lambda. 
+7. Can keywords be used as variables? No, you cannot use a keyword as a variable. 
+8. How can you view the list of keywords in Python? You can view them by typing the code: import keyword followed by print(keyword.kwlist). 
+11. What are the basic components of a programming language? The components include literals, numeric, string, boolean, and special/none. 
+12. What are primi ve (fundamental) data types in Python? The primi ve data types are integers, floats, strings, booleans, and none. 
+13. What happens when you add a float and an integer? The result will be a float. 
+14. What is type conversion? It is the process of conver ng one data type into another, for example converting a string "1000" to an integer 1000 using int(). 
+15. What does bool(-10.5) output? It outputs True. 
+16. What does bool(0) and bool(0.0) output? They both output False. 
+17. What does bool(" ") (a string with a space) output? It outputs True. 
+18. What does bool(None) output? It outputs False. 
+19. What does int(True) output? It outputs 1. 
+20. What does float(False) output? It outputs 0.0.
+21. What are the arithme c operators in Python? They include +, -, *, /, %. 
+22. What does the modulus operator % do? It returns the remainder of a division. 
+23. How do you calculate a power or exponent in Python? You use the ** operator (e.g., (5)**2 becomes 5 ** 2 which is 25). 
+24. What is a compound assignment operator? It is an operator like += or -=. For example, x += 1 means x = x + 1. 
+25. What are the comparison operators? They are ==, !=, >, <, <=, >=. 
+26. What are the logical operators? They are and, or, and not, and they work on boolean values. 
+27. What does not True output? It outputs False. 
+28. What is operator precedence and associa vity? Precedence is the priority of evalua on, and associativity is the direction  of evaluation 
+(left-to-right or right-to-lfte ) when precedence is the same. 
+29. What is a unary operator? An operator that works on a single operand, like -10. 
+30. What is a ternary operator? An operator that works based on a condi on. Example: result = "even" if num % 2 == 0 else "odd".
+31. What does the print() func on do by default when given mul ple arguments? By default, there 
+is a space between the printed items. 
+32. How can you change the default space separator in print()? By using the sep parameter, for example, print(10, 20, sep="*"). 
+33. What data type does the input() func on read by default? The input() func on reads everything in string format. 
+34. What do the abs() and pow() func ons do? abs() returns the absolute value, and pow(x, y) calculates power. 
+35. How is indexing done in Python strings? Indexing is done using []. Le to right is posi ve indexing (star ng at 0), and right to le is nega ve indexing. 
+36. What is string slicing? It allows extrac ng parts of a string using [start:stop:step] syntax. 
+37. What are f-strings? F-strings allow inser ng variables directly inside strings, e.g., print(f"{name} is {age} years old"). 
+38. What are escape sequences? They are special characters like \n for a new line, \t for a tab, and \' to insert a single quote inside a single-quoted string. 
+39. What is string concatena on? The joining of strings is called concatena on. 
+40. What are membership operators? They are in and not in, used to check if a substring or element exists within a sequence. 
+41. What does the strip() func on do? It is used for removing unnecessary spaces from a string. 
+42. What does the replace() func on do? It replaces an old substring with a new one using replace(old, new). 
+43. What does the count() func on do? It counts the occurrences of a specific character or substring. 
+44. What are some string case methods? upper(), lower(), tle(), and capitalize(). 
+45. What do startswith() and endswith() do? They check if a string begins or ends with a specific sequence, and they are case sensi ve. 
+46. What is a list and is it mutable? A list is a sequence denoted by [] and it is mutable. 
+47. How do you find the number of items in a list? Using the len() func on. 
+48. What does append() do? It adds an item to the end of the list. It modifies the same list (in
+place) and returns None. 
+49. What does insert() do? It adds an element before the specific index. 
+50. How do you add more than one character or item to a list? Use the extend() func on. 
+51. What is the difference between remove() and pop()? remove() deletes the first occurrence of a specified value, while pop() removes an element by its index. 
+52. What happens if you use list.sort(reverse=True)? It sorts the list in descending order. 
+53. Does the count() method work on lists? Yes, it counts the occurrences of an item in the list. If the data is not present, it outputs 0. 
+54. Can you use min() and sum() on a list? Yes, for numerical opera ons on list elements. 
+55. What is a nested list? A list inside another list.
+56. What is a Tuple and is it mutable? A tuple is denoted by () and is immutable. 
+57. Why do we use tuples? Python has tuples because somemes you want data that should not change. 
+58. How do you convert a list to a tuple? By using the tuple() func on, like t = tuple(L1). 
+59. Can you concatenate tuples? Yes, using the + operator. 
+60. Does indexing work on tuples? Yes, you can access tuple elements using index posi ons. 
+61. What is a Set? Sets are non-sequen al collec ons of items. 
+62. Is indexing allowed in sets? No, indexing and slicing are not allowed because sets are nonsequen al. 
+63. What happens if you try to add a duplicate element to a set? There is no difference in the output; it ignores duplicates. 
+64. What is the difference between remove() and discard() in sets? If an element is not present, remove() will throw an error,
+but discard() will not give an error. 
+65. What are the common opera ons on sets? Union, Intersec on, and Difference. 
+66. What happens if there are no common elements during an intersec on? You get an empty Set(). 
+67. What is a frozenset? Frozen sets are immutable sets. 
+68. Can you add an item to a frozenset? No, using .add() on a frozenset will give an error.
+69. What is a Dic onary? It is a data type used for labeled data storing key -> value pairs with a unique id. 
+70. Is indexing allowed in dic onaries? No indexing is allowed in dic onaries. 
+71. How do you access a value in a dic onary? By passing the key in brackets, e.g., print(groceries['milk']). 
+72. What happens if a dic onary has two iden cal keys with different values? Keys cannot be duplicates; it has to be unique.
+Python reads from the le and keeps the last wri en value for that key. 
+73. What data types can act as keys in a dic onary? Keys can be Strings, Integers, floats, Booleans, and tuples. 
+74. Can lists, dic onaries, or sets be keys? No, they cannot be keys as they are mutable. 
+75. How do you update or add values to a dic onary? Using the .update() method. 
+76. How do you fetch all keys, values, or items from a dic onary? Using dict.keys(), dict.values(), and dict.items(). 
+77. What does dict.items() return? It returns a sequence where each item is a tuple. 
+78. What is the difference between a shallow copy and a deep copy? A shallow copy just copies the top level ("upar-upar se copy karta hain"),
+while a deep copy creates an en rely new, independent copy ("andar tak poori tarah se ek nayi, independent copy banata hai").
+79. What is the syntax for condi onal blocks in Python? It uses if, elif, and else statements. 
+80. What is a nested if statement? An if statement inside another if statement.
+81. What is a for loop used for? It is an itera on-based loop which steps through the items of a collec on (list, tuple, set, dict, string). 
+82. What does the range() func on do? It is used to generate a sequence of integer numbers. 
+83. What does break do in a loop? It is used to sa sfy a stop condi on; it breaks out of the loop. 
+84. What does con nue do in a loop? It skips the itera on if sa sfied, and moves to the next one. 
+85. How does a while loop func on? It keeps doing a task while a condi on is true, and stops when the condi on becomes False. 
+86. What is an infinite loop (∞ loop)? A loop that never ends; it only stops when we use break. 
+87. What is a nested loop? A loop inside a loop (e.g., the outer loop defines rows, the inner loop defines columns). 
+88. What are the types of func ons? Built-in func ons, user-defined func ons, and third-party func ons. 
+89. What does the return statement do? It gives the result back so you can use it later. 
+90. What happens if a func on returns mul ple values? Python automa cally makes it a tuple. 
+91. What is a posi onal argument? Passing arguments in order of their posi on. 
+92. What is a keyword argument? Passing arguments by explicitly naming the parameters (e.g., a=10, b=5). 
+93. What is a variable-length argument *args? It accepts mul ple posi onal arguments and returns them as a tuple. 
+94. What is **kwargs? It accepts mul ple keyword arguments and stores them as a dic onary. 
+95. What is a doc-string? It is used to explain the code. 
+96. What is recursion? A process in which a func on calls itself un l a certain condi on is not met. 
+97. What are the two parts of a recursion func on? The Base/terminal condi on (stopping condi on) and the Recursive condi on. 
+98. What is the difference between a local and global variable? A local variable is defined inside a func on, while a global 
+variable is defined outside any func on in the main body. 
+99. What is a Lambda func on? It is an anonymous func on. Think of it as a "disposable func on" you use once and then discard. 
+100. Can lambda func ons have mul ple expressions? No, they automa cally return and contain only one expression. 
+101. What is map() used for? It is used when you have to perform an opera on on every element of a list and create a new list.
+102. What is filter() used for? It is used when you want to select only specific elements from a list that sa sfy a condi on. 
+103. What is a module? It is just a file that contains Python code (func ons, variables, classes) which you can reuse in other programs. 
+104. What does alias mean in impor ng? It means giving something a shorter, cleaner name, mostly used with import (e.g., import random as rd). 
+105. What is the __name__ special variable used for? It helps you determine whether a script is 
+being run directly or being imported as a module into another script. 
+106. If you run a file directly, what does Python set __name__ to? Python sets __name__ to "__main__". 
+107. What are the two types of files discussed in Python? Binary files (audio, pictures, video files) and Text files. 
+108. What does r mode do in file handling? It opens a file to read. 
+109. What does w mode do? It opens a file to write or overwrite content. 
+110. What does a mode do? It opens a file to append content at the end. 
+111. What happens if you open a file in w mode that already contains data? It is replaced by newly put content, so you must be very careful when using w mode. 
+112. Why should you close a file using .close()? A er closing a file, you cannot perform read or write opera ons on it. 
+113.What does the read() func on do? It reads the content of the file as a string. 
+114. What does readline() do? It reads a single line at a me. 
+115. What does readlines() do? It reads mul ple lines and stores them in a list. 
+116. What is the advantage of using the with statement for file handling? The with statement terminates/closes
+the file before it terminates, making sure the file closes properly. 
+117. How can you check if a file exists? You can use os.path.exists() or pathlib's Path().exists(). 
+118. What are compile-me errors? Errors like Syntax errors or Indenta on errors. 
+119. What is an Excep on? An error that occurs during execu on. 
+120. What error occurs when you divide a number by zero? A ZeroDivisionError occurs. 
+121. How do you handle an excep on? Using a try block to test code and an except block to catch the error. 
+122. What does the else block do in excep on handling? It runs if no error happens in the try block. 
+123. What does the finally block do? It runs no ma er what, usually placed a er the else 
+block, ensuring resources like files are always safely closed. 
+124. How can you manually trigger an excep on? By using the raise keyword, for example, raise ValueError. 
+ 125. What does JSON stand for? JavaScript Object Nota on, and it is a data interchange format
+126. What is Serializa on? When we want to store data types in memory or files, they need to be converted into a sequence of bytes the computer can understand. 
+127. What is Deserializa on? When you want to access stored structures, the sequences of bytes must be converted back into the original data type. 
+128. What module is used to work with binary serializa on in Python? The pickle module. 
+129. What file modes are used with pickle? wb (write binary) and rb (read binary). 
+130. What func on is used to serialize data in json and pickle? The dump() func on. 
+131. What func on is used to deserialize data? The load() func on.
+132. What are Regular Expressions (RegEx) used for? They are used for pa ern matching, and they are used only on Strings. 
+133. What module do you import to use regex? The re module. 
+134. What does re.search() do? It searches for a given pa ern in a string. 
+135. What does a dot . match in RegEx? It matches anything but not a new line (any single character except a newline character or backslash n). 
+136. What does \d match? It matches 1 digit character, similar to ``. 
+137. What does \s match? It matches any whitespace character. 
+138. What does \S (capital S) match? It matches any character except space, \n, \t. 
+139. What does \w match? It matches [a-z], [A-Z], (alphanumeric characters). 
+140. What does \W (capital W) match? It matches everything except [a-z][A-Z]. 
+141. What are quan fiers in RegEx? They specify repe ons. For example, {2,5} matches between 2 and 5 characters.
+142. What does the + quantifier do? It matches 1 or more repe ons of the previous pattern.  
+143. What does the ? quantifier do? It represents 0 or 1 match. 
+144. What does the * quantifier do? It means 0 or more matches. 
+145. What does the caret symbol ^ mean? It specifies the Start of the string. 
+146. What does the $ symbol mean? It specifies the end of the string. 
+147. Why do we use \b? To prevent par al matching inside a bigger number or word. 
+148. What does re.findall() do? It finds all occurrences of the pa ern and returns a list. 
+148. What does re.finditer() do? It gives a fully informed result returning a callable iterator object
+149. What does re.sub() do? It is a substiute function; it replaces the matched pattern with a given string. 
+150. How do you ignore case sensi vity in RegEx? By using the flags=re.IGNORECASE argument. 
+151. What does re.compile() do? It is used to compile a regular expression pa ern into a 
+pa ern object, which can be used for matching.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+9. Is Python case sensi ve? Yes, Python is case sensi ve (e.g., 'python' == 'Python' is False). 
+10. What is a variable? A variable represents a reserved memory loca on.
